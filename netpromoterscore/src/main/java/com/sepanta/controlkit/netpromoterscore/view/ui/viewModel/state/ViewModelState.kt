@@ -1,6 +1,6 @@
 package com.sepanta.controlkit.netpromoterscore.view.ui.viewModel.state
 
-import com.sepanta.controlkit.netpromoterscore.service.errorHandler.ApiError
+import com.sepanta.errorhandler.ApiError
 
 
 sealed class ViewModelState {
