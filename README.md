@@ -49,16 +49,6 @@ dependencies {
 
 [![JitPack](https://jitpack.io/v/ControlKit/NetPromoterScoreKit-Android.svg)](https://jitpack.io/#ControlKit/NetPromoterScoreKit-Android)
 
-### Step 3: Configure API Endpoint
-
-Add your API base URL to `local.properties`:
-
-```properties
-API_URL=https://your-api-domain.com/api/nps
-```
-
-The library will automatically append `/view` and `/submit` endpoints to this URL.
-
 ## Quick Start
 
 ### Basic Integration
@@ -418,7 +408,7 @@ platform: android
 ### API Endpoints
 
 #### View Action (POST)
-**URL:** `${API_URL}/view`
+**URL:** `/view`
 **Purpose:** Track when the NPS dialog is shown
 **Body:**
 ```
@@ -426,7 +416,7 @@ name: Survey/campaign name
 ```
 
 #### Submit Action (POST)
-**URL:** `${API_URL}/submit`
+**URL:** `/submit`
 **Purpose:** Submit user's NPS score and feedback
 **Body:**
 ```
@@ -585,7 +575,6 @@ val npsKit = netPromoterScoreKitHost(
    - Verify Compose context is available
 
 2. **Network requests failing**
-   - Verify `API_URL` is set in `local.properties`
    - Check network permissions in AndroidManifest.xml
    - Ensure server endpoints are accessible
 
