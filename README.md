@@ -43,11 +43,11 @@ Add the library to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.YourUsername:NetPromoterScoreExample:0.0.1")
+    implementation("com.github.ControlKit:NetPromoterScoreKit-Android:0.0.2")
 }
 ```
 
-Replace `YourUsername` with your GitHub username and `0.0.1` with your desired version tag.
+[![JitPack](https://jitpack.io/v/ControlKit/NetPromoterScoreKit-Android.svg)](https://jitpack.io/#ControlKit/NetPromoterScoreKit-Android)
 
 ### Step 3: Configure API Endpoint
 
@@ -621,6 +621,8 @@ The library includes these dependencies automatically:
 - Material Design 3
 
 ## License
+
+Copyright (c) 2024 ControlKit
 
 This project is licensed under the terms specified in the LICENSE file in the repository.
 
